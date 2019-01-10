@@ -1,0 +1,15 @@
+.card-ship {
+    height: auto; 
+    border: 1px solid #000; 
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.btn-container {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.icon-type {height: 30px; width:50px}
+
+.photo {width:100%;max-height: 180px;}

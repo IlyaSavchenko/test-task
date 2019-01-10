@@ -1,0 +1,11 @@
+<div class="card-ship">
+  <div><img class="photo" src="{{spacesh.img}}"></div>
+  <div><strong>Модель:</strong> {{spacesh.model}}</div>
+  <div><strong>Тип:</strong>  <img class="icon-type" placement="top" ngbTooltip="{{spacesh.type}}" src="{{spacesh.typeimg}}"></div>
+  <div><strong>Цена:</strong>  {{spacesh.price}}</div>
+  <div><strong>Доступно:</strong>  {{spacesh.avaliable}}</div>
+  <div class="btn-container">
+    <button class="btn btn-success" (click)="buy()" style="margin-right: 10px;">Купить</button>
+    <button class="btn btn-warning" (click)="moreInfo()" type="button">Подробнее</button>
+  </div>
+</div>
