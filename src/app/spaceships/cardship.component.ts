@@ -17,19 +17,8 @@ export class CardshipComponent implements OnInit {
     this.spacesh = this.dataService.getData();
   }
 
-  // public buy(i: number) {
-  //   if (this.spacesh[i].avaliable > 0) {
-  //     this.spacesh[i].avaliable--;
-  //   } else {
-  //     alert('Нет доступных кораблей модели: ' + this.spacesh[i].model);
-  //   }
-  //   console.log(i);
-  // }
-
   public moreInfo(i: number) {
     this.router.navigate(['/more',  i]);
-    // console.log(this.spacesh[i].id);
-    // this.router.navigate(['/more'], { queryParams: { id: 'popular' } });
   }
 
 }

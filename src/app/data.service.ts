@@ -52,13 +52,11 @@ export class DataService {
   }
 
   public buy(i: number) {
-    console.log(this.spaceships[i]);
     if (this.spaceships[i].avaliable > 0) {
       this.spaceships[i].avaliable--;
     } else {
       alert('Нет доступных кораблей модели: ' + this.spaceships[i].model);
     }
-    console.log(i);
   }
 
   getSpaceShip(i: number) {
