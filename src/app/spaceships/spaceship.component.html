@@ -1,3 +1,26 @@
-<p>
-  ID товара: {{this.id}}
-</p>
+<div class="container card">
+  <div class="row">
+    <div class="col-12 row">
+      <div class="col-6 photo-product">
+        <img src="{{this.spaceShip.img}}" alt="photo">
+      </div>
+      <div class="col-6 small-info">
+        <h2>Основная информация</h2>
+        <div><strong>Модель:</strong> {{this.spaceShip.model}}</div>
+        <div><strong>Тип:</strong><img class="icon-type" placement="top" ngbTooltip="{{this.spaceShip.type}}" src="{{this.spaceShip.typeimg}}"></div>
+        <div><strong>Цена: </strong>{{this.spaceShip.price}}</div>
+        <div><strong>Доступно: </strong>{{this.spaceShip.avaliable}}</div>
+        <button class="btn btn-success" (click)="this.dataService.buy(this.id)" style="margin: 10px 0 0">Купить</button>
+      </div>
+    </div>
+    <div class="col-12" class="additional-info">
+      <h2>Дополнительная информация</h2>
+      <div><strong>Описание:</strong> {{this.spaceShip.desc}}</div>
+      <div><strong>Дата запуска модели в серийное производство:</strong> {{this.spaceShip.prod_date}}</div>
+      <div><strong>Количество посадочных мест:</strong> {{this.spaceShip.count_place}}</div>
+      <div><strong>Размер команды:</strong> {{this.spaceShip.size_team}}</div>
+      <div><strong>Объем трюма:</strong> {{this.spaceShip.size_hold}}</div> 
+      <div><strong>Количество/наличие орудий:</strong> {{this.spaceShip.weapon}}</div>
+    </div>
+  </div>
+</div>

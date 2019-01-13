@@ -9,6 +9,7 @@ import { CardshipComponent } from './spaceships/cardship.component';
 import { SpaceshipComponent } from './spaceships/spaceship.component';
 import { NgbdTooltipBasic } from './tooltip-basic';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { DataService } from './data.service';
 
 
 @NgModule({
@@ -25,7 +26,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     AppRoutingModule,
     NgbModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
